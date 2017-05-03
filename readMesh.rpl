@@ -1,0 +1,19 @@
+ic_empty_tetin 
+ic_read_external {C://Program Files/ANSYS Inc/v170/icemcfd/win64_amd/icemcfd/result-interfaces/readfluent.exe} workingDir 1 2 0 {}
+ic_geo_new_family PART0
+ic_uns_move_family_elements ORFN PART0
+ic_boco_solver 
+ic_uns_update_family_type visible {INLET FLUID BACK OUTLET FRONT ORFN CYLINDER PART0} {QUAD_4 !HEXA_8} update 0
+ic_boco_clear_icons 
+ic_csystem_display all 0
+ic_csystem_set_current global
+ic_boco_nastran_csystem reset
+ic_uns_diag_reset_degen_min_max 
+ic_uns_create_selection_subset 0
+ic_uns_create_selection_edgelist 1
+ic_uns_subset_configure uns_sel_0 -draw_nodes 1
+ic_uns_uniqify uns_sel_0
+ic_uns_subset_visible uns_sel_0 0
+ic_uns_create_selection_edgelist 0
+ic_uns_subset_delete uns_sel_0
+ic_uns_subset_delete {}
